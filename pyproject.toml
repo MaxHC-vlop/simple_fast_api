@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "simple-fast-api"
+version = "0.1.0"
+description = ""
+authors = ["Vladuslav Dragushin <maxhc@inbox.ru>"]
+readme = "README.md"
+packages = [{include = "simple_fast_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standart"], version = "^0.29.0"}
+pydantic = {extras = ["email"], version = "^2.7.1"}
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
